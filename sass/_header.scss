@@ -1,0 +1,55 @@
+@use 'config' as *;
+
+.header {
+    padding: 2.5em 0;
+    
+    &__title {
+        font-size: 1.5rem;
+        margin-bottom: .2em;
+        color: var(--text2);
+    }
+    &__subtitle {
+        font-size: .9rem;
+        color: var(--text1);
+    }
+}
+
+.header-right {
+    margin-top: 1.8em;
+    padding-top: 1em;
+    border-top: 2px solid var(--text1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    position: relative;
+    background: black;
+    margin-left: 15px;
+    width: 46px;
+    height: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        right: 2.5px;
+        background: rgb(255, 255, 255);
+        transform: translateY(-50%);
+        border-radius: 50%;
+    }
+    
+    &__text {
+        font-weight: 700;
+        color: var(--text1);
+    }
+}
+
+#theme {
+    display: none;
+}

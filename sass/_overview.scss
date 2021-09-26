@@ -1,0 +1,60 @@
+@use 'config' as *;
+
+.overview {
+    background: var(--card-bg);
+    padding: 2.2em 2em 1.1em 1.7em;
+    border-radius: 5px;
+    
+    &__title {
+        color: var(--text1);
+    }
+
+    &__num {
+        color: var(--text2);
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    &__increase {
+        font-weight: 700;
+        color: $grow;
+        margin-left: .1em;
+    }
+    &__decrease {
+        font-weight: 700;
+        color: $decrease;
+        margin-left: .1em;
+    }
+}
+
+.overview-top {
+    margin-bottom: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.overview-grow {
+    margin-bottom: .4em;
+    display: flex;
+    align-items: center;
+}
+
+.overview-section {
+    margin-top: 2.6em;
+
+    &__title {
+        font-size: 1.5rem;
+        color: var(--text1);
+    }
+}
+
+.overview-container {
+    margin-top: 1.85em;
+    display: grid;
+    grid-gap: 1.09em;
+}
