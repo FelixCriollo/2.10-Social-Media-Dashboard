@@ -6,7 +6,7 @@ const themes = [ // themes[1][0] = dark theme | themes[1][1] = light theme
     ['--card-bg', ['hsl(227, 47%, 96%)', 'hsl(228, 28%, 20%)']],
     ['--text1', ['hsl(228, 12%, 44%)', 'hsl(228, 34%, 66%)']],
     ['--text2', ['hsl(230, 17%, 14%)', 'hsl(0, 0%, 100%)']],
-    ['--toggle', ['hsl(230, 22%, 74%)', 'linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%))']]
+    ['--toggle', ['hsl(230, 22%, 74%)', 'linear-gradient(270deg, rgba(69,219,134,1) 0%, rgba(59,143,227,1) 100%)']]
 ]
 
 const changeColor = (key, value) => {
@@ -18,6 +18,7 @@ theme.addEventListener("click", () => {
         console.log('dark');
         themes.forEach(c => {
             changeColor(c[0], c[1][1]);
+            console.log(c[0], c[1][1]);
         })
     } else {
         console.log('light');

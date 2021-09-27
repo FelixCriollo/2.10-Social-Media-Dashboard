@@ -5,7 +5,7 @@
   --card-bg: hsl(227, 47%, 96%);
   --text1: hsl(228, 12%, 44%);
   --text2: hsl(230, 17%, 14%);
-  --toogle: hsl(230, 22%, 74%);
+  --toggle: hsl(230, 22%, 74%);
 }
 
 *, *::after, *::before {
@@ -34,12 +34,14 @@ body::before {
 
 .container {
   width: 100%;
-  max-width: 324px;
+  max-width: 344px;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .header {
-  padding: 2.5em 0;
+  padding: 2.5em 10px;
 }
 .header__title {
   font-size: 1.5rem;
@@ -62,7 +64,7 @@ body::before {
 
 .toggle {
   position: relative;
-  background: black;
+  background: var(--toggle);
   margin-left: 15px;
   width: 46px;
   height: 25px;
@@ -76,7 +78,7 @@ body::before {
   height: 20px;
   top: 50%;
   right: 2.5px;
-  background: white;
+  background: var(--top-bg-pattern);
   transform: translateY(-50%);
   border-radius: 50%;
 }
@@ -222,6 +224,45 @@ body::before {
   margin-top: 1.85em;
   display: grid;
   grid-gap: 1.09em;
+}
+
+@media (min-width: 425px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1150px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.65em;
+  }
+  .header__title {
+    font-size: 1.75rem;
+  }
+
+  .header-right {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card {
+    padding-bottom: 1.5em;
+  }
+
+  .card-container {
+    margin-bottom: 3.5em;
+    grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+    grid-gap: 2em;
+  }
+
+  .overview-container {
+    margin-bottom: 3.5em;
+    grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+    grid-gap: 1em 2em;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

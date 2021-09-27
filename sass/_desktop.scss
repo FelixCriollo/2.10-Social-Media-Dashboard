@@ -1,0 +1,43 @@
+@use 'config' as *;
+
+@include desktop {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 1150px;
+    }
+
+    // HEADER
+    .header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: .65em;
+
+        &__title {
+            font-size: 1.75rem;
+        }
+    }
+
+    .header-right {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    // TOTAL FOLLOWERS
+    .card {
+        padding-bottom: 1.5em;
+    }
+    .card-container {
+        margin-bottom: 3.5em;
+        grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+        grid-gap: 2em;
+    }
+    
+    // OVERVIEW
+    .overview-container {
+        margin-bottom: 3.5em;
+        grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+        grid-gap: 1em 2em;
+    }
+}
