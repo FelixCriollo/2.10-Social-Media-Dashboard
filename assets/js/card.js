@@ -108,4 +108,4 @@ setTimeout(() => {
     createCard(data[1])
     createCard(data[3])
     data.forEach(c => createOverview(c));
-}, 500);
+}, 400);
