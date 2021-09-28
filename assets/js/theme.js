@@ -18,7 +18,6 @@ theme.addEventListener("click", () => {
         console.log('dark');
         themes.forEach(c => {
             changeColor(c[0], c[1][1]);
-            console.log(c[0], c[1][1]);
         })
     } else {
         console.log('light');

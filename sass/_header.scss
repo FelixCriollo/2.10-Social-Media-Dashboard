@@ -32,24 +32,27 @@
     border-radius: 20px;
     cursor: pointer;
 
-    &::before {
+    .slider {
         position: absolute;
         content: '';
         width: 20px;
         height: 20px;
-        top: 50%;
-        right: 2.5px;
-        background: var(--top-bg-pattern);
-        transform: translateY(-50%);
+        top: 2.5px;
+        right: 3px;
         border-radius: 50%;
+        background: var(--top-bg-pattern);
+        transition: all .4s ease-out;
     }
-    
+
     &__text {
         font-weight: 700;
         color: var(--text1);
     }
 }
 
-#theme {
+.theme {
     display: none;
+}
+.theme:checked + .slider {
+    right: 23px;
 }
