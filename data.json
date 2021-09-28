@@ -8,7 +8,7 @@
             "increase": 12
         },
         "overview1": {
-            "title": "page views",
+            "title": "Page Views",
             "number": 87,
             "grow": {
                 "decrease": 0,
@@ -16,36 +16,11 @@
             }  
         },
         "overview2": {
-            "title": "likes",
+            "title": "Likes",
             "number": 52,
             "grow": {
                 "decrease": 2,
                 "increase": 0
-            }  
-        }
-    },
-    {
-        "social": "twitter",
-        "acount": "@nathanf",
-        "followers": 1044,
-        "grow": {
-            "decrease": 0,
-            "increase": 99
-        },
-        "overview1": {
-            "title": "retweets",
-            "number": 117,
-            "grow": {
-                "decrease": 0,
-                "increase": 303
-            }  
-        },
-        "overview2": {
-            "title": "likes",
-            "number": 507,
-            "grow": {
-                "decrease": 0,
-                "increase": 553
             }  
         }
     },
@@ -58,7 +33,7 @@
             "increase": 1099
         },
         "overview1": {
-            "title": "profile views",
+            "title": "Profile Views",
             "number": "52K",
             "grow": {
                 "decrease": 0,
@@ -66,11 +41,36 @@
             }  
         },
         "overview2": {
-            "title": "likes",
+            "title": "Likes",
             "number": 5462,
             "grow": {
                 "decrease": 0,
                 "increase": 2257
+            }  
+        }
+    },
+    {
+        "social": "twitter",
+        "acount": "@nathanf",
+        "followers": 1044,
+        "grow": {
+            "decrease": 0,
+            "increase": 99
+        },
+        "overview1": {
+            "title": "Retweets",
+            "number": 117,
+            "grow": {
+                "decrease": 0,
+                "increase": 303
+            }  
+        },
+        "overview2": {
+            "title": "Likes",
+            "number": 507,
+            "grow": {
+                "decrease": 0,
+                "increase": 553
             }  
         }
     },
@@ -83,7 +83,7 @@
             "increase": 0
         },
         "overview1": {
-            "title": "total views",
+            "title": "Total Views",
             "number": 1407,
             "grow": {
                 "decrease": 12,
@@ -91,7 +91,7 @@
             }  
         },
         "overview2": {
-            "title": "likes",
+            "title": "Likes",
             "number": 107,
             "grow": {
                 "decrease": 19,

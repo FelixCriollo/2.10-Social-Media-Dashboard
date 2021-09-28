@@ -103,8 +103,9 @@ function createOverview(item) {
 }
 
 setTimeout(() => {
-    data.forEach(c => {
-        createCard(c)
-        createOverview(c)
-    });
+    createCard(data[0])
+    createCard(data[2])
+    createCard(data[1])
+    createCard(data[3])
+    data.forEach(c => createOverview(c));
 }, 500);
